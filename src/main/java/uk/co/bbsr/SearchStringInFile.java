@@ -8,26 +8,19 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SearchStringInFile {
 
-
     public void searchInFile(List<File> fileList, String searchString) {
-
         fileList.stream().parallel().forEach(file -> {
         System.out.println(Objects.nonNull(textSearch(file, searchString))?textSearch(file, searchString):"");
         });
     }
 
     public Path textSearch(File fileName, String searchString) {
-        String matchPattern = String.format("^%s$", searchString);
-        System.out.println("matchPattern "+ matchPattern);
-        Pattern pattern = Pattern.compile(matchPattern);
         Path matchendPath[] = new Path[1];
         try {
-
             System.out.println("\tReading file: " + fileName);
             Path filePath = Paths.get(fileName.getAbsolutePath());
             Files.readAllLines(filePath)
@@ -42,7 +35,6 @@ public class SearchStringInFile {
                             matchendPath[0] = filePath;
                         }
                     });
-
         } catch (IOException e) {
             e.printStackTrace();
         }

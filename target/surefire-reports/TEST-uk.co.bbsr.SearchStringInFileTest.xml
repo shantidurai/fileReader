@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uk.co.bbsr.SearchStringInFileTest" time="0.113" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uk.co.bbsr.SearchStringInFileTest" time="0.098" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+10-LTS"/>
@@ -63,8 +63,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="searchInFile1" classname="uk.co.bbsr.SearchStringInFileTest" time="0.03"/>
-  <testcase name="searchInFile2" classname="uk.co.bbsr.SearchStringInFileTest" time="0.002"/>
-  <testcase name="searchInFile3" classname="uk.co.bbsr.SearchStringInFileTest" time="0.002"/>
-  <testcase name="searchInFile4" classname="uk.co.bbsr.SearchStringInFileTest" time="0.003"/>
+  <testcase name="searchStringNotInFile3" classname="uk.co.bbsr.SearchStringInFileTest" time="0.031"/>
+  <testcase name="searchInFile1" classname="uk.co.bbsr.SearchStringInFileTest" time="0.004"/>
+  <testcase name="searchInFile2" classname="uk.co.bbsr.SearchStringInFileTest" time="0.003"/>
+  <testcase name="searchInFile3" classname="uk.co.bbsr.SearchStringInFileTest" time="0.003"/>
 </testsuite>
